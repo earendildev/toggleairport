@@ -1,33 +1,25 @@
-The credit for most of the code belongs to others including https://gist.github.com/albertbori/1798d88a93175b9da00b
+*The credit for most of the code belongs to others including [albertbori/toggleairpot](https://gist.github.com/albertbori/1798d88a93175b9da00b)*
+*forked from [Calvin-LL/toggleairport](https://github.com/Calvin-LL/toggleairport)*
 
-This program turns off WiFi when it detects a wired ethernet connection and turns on WiFi when the ethernet is unplugged.
+# Overview #
+
+Simply this Script turns off the WiFi Adapter when it detects a Wired Ethernet Connection and turns the WiFi back on when the Ethernet Adapter is unplugged.
+**Only for MacOs**.
 
 ## For Catalina and later ##
-Tested on Catalina
 
+**To Install**
 ```bash
-git clone https://github.com/Calvin-LL/toggleairport.git
+mkdir -p $HOME/.config/scripts/ && cd $HOME/.config/scripts/
+git clone https://github.com/earendildev/toggleairport.git
 cd toggleairport
 ./install.sh
 ```
 
-to uninstall just do
+**To Uninstall**
 ```bash
+cd $HOME/.config/scripts/toggleairport
 ./uninstall.sh
 ```
 
-## For pre Catalina ##
-(or if the Catalina version didn't work for you)
-
-```bash
-git clone --branch pre_catalina https://github.com/Calvin-LL/toggleairport.git
-cd toggleairport
-./install.sh
-```
-
-to uninstall just do
-```bash
-./uninstall.sh
-```
-
-Do not run either of the scripts with sudo, if you do, notifications will not display.
+***Do not run either of the scripts with sudo, if you do, notifications will not display.***
